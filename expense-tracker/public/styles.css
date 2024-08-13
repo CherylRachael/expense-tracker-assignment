@@ -1,0 +1,499 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #142850;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ccc;
+}
+
+.btn {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+footer {
+    background: #142850;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    height: 60px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+}
+
+/* Adjust logo size for mobile */
+@media (max-width: 768px) {
+    .logo a {
+        font-size: 20px;
+    }
+}
+
+.index{
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(20,40,80,1) 100%);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+}
+
+
+.sidebar {
+    width: 250px;
+    background-color: #142850;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #34495e;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: none; /* Hide sidebar on mobile by default */
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+}
+
+/* Show sidebar on mobile when toggled */
+@media (max-width: 768px) {
+    .sidebar.show {
+        display: block;
+    }
+}
+.main-content {
+    margin-left: 250px; 
+    padding: 20px;
+    flex: 1;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.summary-item h3 {
+    margin-bottom: 10px;
+}
+
+.summary-item p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.chart-container {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.login-container, .signup-container {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+
+.login-image-side, .signup-image-side {
+    flex: 1;
+    background: linear-gradient(90deg, rgba(252,176,69,1) 0%, rgba(253,29,29,1) 50%, rgba(131,58,180,1) 100%);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form-side, .signup-form-side {
+    flex: 1;
+    gap: 15px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #ded7cd;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.login-social-login button, .signup-social-login button {
+    background-color: #db4437;
+}
+
+.login-social-login button:hover, .signup-social-login button:hover {
+    background-color: #c1351d;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .login-form-side, .signup-form-side {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .login-image-side, .signup-image-side {
+        display: none; /* Hide image side on mobile */
+    }
+}
+
+input, textarea, button {
+    width: 100%; /* Full width for form elements */
+}
+
+/* Responsive Buttons */
+button {
+    padding: 12px;
+    font-size: 16px;
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto; 
+    max-height: calc(100vh - 60px); 
+    padding: 40px;
+    overflow-y: auto; 
+    background-color: #fff;
+    box-sizing: border-box; 
+}
+.profile-content {
+    max-width: 500px; 
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .profile {
+        padding: 10px;
+    }
+}
+.add-expense {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+@media (max-width: 768px) {
+    .add-expense {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+.add-expense h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="date"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+button[type="submit"] {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.help-header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.help-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .help-container {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+.help-intro p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.help-search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#helpSearchBar {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.help-faq {
+    margin-bottom: 30px;
+}
+
+.help-faq h2, .help-guides h2, .help-contact h2, .help-feedback h2 {
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.help-faq-item {
+    margin-bottom: 15px;
+}
+
+.help-question {
+    cursor: pointer;
+    color: #007bff;
+    margin: 0;
+}
+
+.help-answer {
+    display: none;
+    margin-top: 5px;
+    color: #555;
+}
+
+.help-guides-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.help-guides-list li {
+    margin-bottom: 10px;
+}
+
+.help-guides-list a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.help-guides-list a:hover {
+    text-decoration: underline;
+}
+
+.help-contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.help-contact ul li {
+    margin-bottom: 10px;
+}
+
+.help-feedback button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.help-feedback button:hover {
+    background-color: #007bff;
+    color: white;
+}

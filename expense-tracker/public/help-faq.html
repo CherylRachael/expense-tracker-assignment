@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help/FAQ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">eXp</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="add-expense.html">Add Expense</a></li>
+          <li><a href="profile-settings.html">Profile/Settings</a></li>
+          <li><a href="help-faq.html">Help/FAQ</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="help-header">
+        <h1>Help & FAQ</h1>
+      </div>
+
+      <main class="help-container">
+        <section class="help-intro">
+          <p>
+            Welcome to the Help & FAQ page. Here you can find answers to common
+            questions and guidance on using the application.
+          </p>
+        </section>
+
+        <section class="help-search">
+          <input
+            type="text"
+            id="helpSearchBar"
+            placeholder="Search for help..."
+            onkeyup="helpSearchFunction()"
+          />
+        </section>
+
+        <section class="help-faq">
+          <h2>Frequently Asked Questions</h2>
+          <div class="help-faq-item">
+            <h3 class="help-question">How do I reset my password?</h3>
+            <p class="help-answer">
+              You can reset your password by going to the Profile/Settings page
+              and clicking on 'Reset Password'.
+            </p>
+          </div>
+          <div class="help-faq-item">
+            <h3 class="help-question">How do I add an expense?</h3>
+            <p class="help-answer">
+              To add an expense, navigate to the 'Add Expense' page from the
+              dashboard and fill in the required fields.
+            </p>
+          </div>
+          <div class="help-faq-item">
+            <h3 class="help-question">Can I change the currency settings?</h3>
+            <p class="help-answer">
+              Yes, you can change your currency preferences in the
+              Profile/Settings page under 'Currency Preferences'.
+            </p>
+          </div>
+        </section>
+
+        <section class="help-guides">
+          <h2>How-To Guides</h2>
+          <ul class="help-guides-list">
+            <li><a href="#">How to Create an Account</a></li>
+            <li><a href="#">How to Manage Expenses</a></li>
+            <li><a href="#">How to Set Budget Limits</a></li>
+          </ul>
+        </section>
+
+        <section class="help-contact">
+          <h2>Contact Us</h2>
+          <p>
+            If you couldn't find the help you need, feel free to contact our
+            support team:
+          </p>
+          <ul>
+            <li>Email: support@example.com</li>
+            <li>Phone: +123 456 7890</li>
+            <li><a href="#">Live Chat</a></li>
+          </ul>
+        </section>
+
+        <section class="help-feedback">
+          <h2>Feedback</h2>
+          <p>Was this help page useful?</p>
+          <button onclick="helpFeedback()">Yes</button>
+          <button onclick="helpFeedback()">No</button>
+        </section>
+      </main>
+
+      <script src="help.js"></script>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Expense Tracker. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
